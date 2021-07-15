@@ -1,0 +1,926 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+		svg:not(:root).svg-inline--fa {
+			overflow: visible;
+		}
+
+		.svg-inline--fa {
+			display: inline-block;
+			font-size: inherit;
+			height: 1em;
+			overflow: visible;
+			vertical-align: -0.125em;
+		}
+
+		.svg-inline--fa.fa-lg {
+			vertical-align: -0.225em;
+		}
+
+		.svg-inline--fa.fa-w-1 {
+			width: 0.0625em;
+		}
+
+		.svg-inline--fa.fa-w-2 {
+			width: 0.125em;
+		}
+
+		.svg-inline--fa.fa-w-3 {
+			width: 0.1875em;
+		}
+
+		.svg-inline--fa.fa-w-4 {
+			width: 0.25em;
+		}
+
+		.svg-inline--fa.fa-w-5 {
+			width: 0.3125em;
+		}
+
+		.svg-inline--fa.fa-w-6 {
+			width: 0.375em;
+		}
+
+		.svg-inline--fa.fa-w-7 {
+			width: 0.4375em;
+		}
+
+		.svg-inline--fa.fa-w-8 {
+			width: 0.5em;
+		}
+
+		.svg-inline--fa.fa-w-9 {
+			width: 0.5625em;
+		}
+
+		.svg-inline--fa.fa-w-10 {
+			width: 0.625em;
+		}
+
+		.svg-inline--fa.fa-w-11 {
+			width: 0.6875em;
+		}
+
+		.svg-inline--fa.fa-w-12 {
+			width: 1em;
+		}
+
+		.svg-inline--fa.fa-w-13 {
+			width: 0.8125em;
+		}
+
+		.svg-inline--fa.fa-w-14 {
+			width: 0.875em;
+		}
+
+		.svg-inline--fa.fa-w-15 {
+			width: 0.9375em;
+		}
+
+		.svg-inline--fa.fa-w-16 {
+			width: 1em;
+		}
+
+		.svg-inline--fa.fa-w-17 {
+			width: 1.0625em;
+		}
+
+		.svg-inline--fa.fa-w-18 {
+			width: 1.125em;
+		}
+
+		.svg-inline--fa.fa-w-19 {
+			width: 1.1875em;
+		}
+
+		.svg-inline--fa.fa-w-20 {
+			width: 1.25em;
+		}
+
+		.svg-inline--fa.fa-pull-left {
+			margin-right: 0.3em;
+			width: auto;
+		}
+
+		.svg-inline--fa.fa-pull-right {
+			margin-left: 0.3em;
+			width: auto;
+		}
+
+		.svg-inline--fa.fa-border {
+			height: 1.5em;
+		}
+
+		.svg-inline--fa.fa-li {
+			width: 2em;
+		}
+
+		.svg-inline--fa.fa-fw {
+			width: 1.25em;
+		}
+
+		.fa-layers svg.svg-inline--fa {
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.fa-layers {
+			display: inline-block;
+			height: 1em;
+			position: relative;
+			text-align: center;
+			vertical-align: -0.125em;
+			width: 1em;
+		}
+
+		.fa-layers svg.svg-inline--fa {
+			-webkit-transform-origin: center center;
+			transform-origin: center center;
+		}
+
+		.fa-layers-counter,
+		.fa-layers-text {
+			display: inline-block;
+			position: absolute;
+			text-align: center;
+		}
+
+		.fa-layers-text {
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-transform-origin: center center;
+			transform-origin: center center;
+		}
+
+		.fa-layers-counter {
+			background-color: #ff253a;
+			border-radius: 1em;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			color: #fff;
+			height: 1.5em;
+			line-height: 1;
+			max-width: 5em;
+			min-width: 1.5em;
+			overflow: hidden;
+			padding: 0.25em;
+			right: 0;
+			text-overflow: ellipsis;
+			top: 0;
+			-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+
+		.fa-layers-bottom-right {
+			bottom: 0;
+			right: 0;
+			top: auto;
+			-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+			-webkit-transform-origin: bottom right;
+			transform-origin: bottom right;
+		}
+
+		.fa-layers-bottom-left {
+			bottom: 0;
+			left: 0;
+			right: auto;
+			top: auto;
+			-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+			-webkit-transform-origin: bottom left;
+			transform-origin: bottom left;
+		}
+
+		.fa-layers-top-right {
+			right: 0;
+			top: 0;
+			-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+
+		.fa-layers-top-left {
+			left: 0;
+			right: auto;
+			top: 0;
+			-webkit-transform: scale(0.25);
+			transform: scale(0.25);
+			-webkit-transform-origin: top left;
+			transform-origin: top left;
+		}
+
+		.fa-lg {
+			font-size: 1.3333333333em;
+			line-height: 0.75em;
+			vertical-align: -0.0667em;
+		}
+
+		.fa-xs {
+			font-size: 0.75em;
+		}
+
+		.fa-sm {
+			font-size: 0.875em;
+		}
+
+		.fa-1x {
+			font-size: 1em;
+		}
+
+		.fa-2x {
+			font-size: 2em;
+		}
+
+		.fa-3x {
+			font-size: 3em;
+		}
+
+		.fa-4x {
+			font-size: 4em;
+		}
+
+		.fa-5x {
+			font-size: 5em;
+		}
+
+		.fa-6x {
+			font-size: 6em;
+		}
+
+		.fa-7x {
+			font-size: 7em;
+		}
+
+		.fa-8x {
+			font-size: 8em;
+		}
+
+		.fa-9x {
+			font-size: 9em;
+		}
+
+		.fa-10x {
+			font-size: 10em;
+		}
+
+		.fa-fw {
+			text-align: center;
+			width: 1.25em;
+		}
+
+		.fa-ul {
+			list-style-type: none;
+			margin-left: 2.5em;
+			padding-left: 0;
+		}
+
+		.fa-ul>li {
+			position: relative;
+		}
+
+		.fa-li {
+			left: -2em;
+			position: absolute;
+			text-align: center;
+			width: 2em;
+			line-height: inherit;
+		}
+
+		.fa-border {
+			border: solid 0.08em #eee;
+			border-radius: 0.1em;
+			padding: 0.2em 0.25em 0.15em;
+		}
+
+		.fa-pull-left {
+			float: left;
+		}
+
+		.fa-pull-right {
+			float: right;
+		}
+
+		.fa.fa-pull-left,
+		.fas.fa-pull-left,
+		.far.fa-pull-left,
+		.fal.fa-pull-left,
+		.fab.fa-pull-left {
+			margin-right: 0.3em;
+		}
+
+		.fa.fa-pull-right,
+		.fas.fa-pull-right,
+		.far.fa-pull-right,
+		.fal.fa-pull-right,
+		.fab.fa-pull-right {
+			margin-left: 0.3em;
+		}
+
+		.fa-spin {
+			-webkit-animation: fa-spin 2s infinite linear;
+			animation: fa-spin 2s infinite linear;
+		}
+
+		.fa-pulse {
+			-webkit-animation: fa-spin 1s infinite steps(8);
+			animation: fa-spin 1s infinite steps(8);
+		}
+
+		@-webkit-keyframes fa-spin {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes fa-spin {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			100% {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+
+		.fa-rotate-90 {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+
+		.fa-rotate-180 {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		.fa-rotate-270 {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+			-webkit-transform: rotate(270deg);
+			transform: rotate(270deg);
+		}
+
+		.fa-flip-horizontal {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+			-webkit-transform: scale(-1, 1);
+			transform: scale(-1, 1);
+		}
+
+		.fa-flip-vertical {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+			-webkit-transform: scale(1, -1);
+			transform: scale(1, -1);
+		}
+
+		.fa-flip-both,
+		.fa-flip-horizontal.fa-flip-vertical {
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+			-webkit-transform: scale(-1, -1);
+			transform: scale(-1, -1);
+		}
+
+		:root .fa-rotate-90,
+		:root .fa-rotate-180,
+		:root .fa-rotate-270,
+		:root .fa-flip-horizontal,
+		:root .fa-flip-vertical,
+		:root .fa-flip-both {
+			-webkit-filter: none;
+			filter: none;
+		}
+
+		.fa-stack {
+			display: inline-block;
+			height: 2em;
+			position: relative;
+			width: 2.5em;
+		}
+
+		.fa-stack-1x,
+		.fa-stack-2x {
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.svg-inline--fa.fa-stack-1x {
+			height: 1em;
+			width: 1.25em;
+		}
+
+		.svg-inline--fa.fa-stack-2x {
+			height: 2em;
+			width: 2.5em;
+		}
+
+		.fa-inverse {
+			color: #fff;
+		}
+
+		.sr-only {
+			border: 0;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+
+		.sr-only-focusable:active,
+		.sr-only-focusable:focus {
+			clip: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			position: static;
+			width: auto;
+		}
+
+		.svg-inline--fa .fa-primary {
+			fill: var(--fa-primary-color, currentColor);
+			opacity: 1;
+			opacity: var(--fa-primary-opacity, 1);
+		}
+
+		.svg-inline--fa .fa-secondary {
+			fill: var(--fa-secondary-color, currentColor);
+			opacity: 0.4;
+			opacity: var(--fa-secondary-opacity, 0.4);
+		}
+
+		.svg-inline--fa.fa-swap-opacity .fa-primary {
+			opacity: 0.4;
+			opacity: var(--fa-secondary-opacity, 0.4);
+		}
+
+
+		.svg-inline--fa.fa-swap-opacity .fa-secondary {
+			opacity: 1;
+			opacity: var(--fa-primary-opacity, 1);
+		}
+
+		.svg-inline--fa mask .fa-primary,
+		.svg-inline--fa mask .fa-secondary {
+			fill: black;
+		}
+
+		.fad.fa-inverse {
+			color: #fff;
+		}
+	</style>
+	<link rel="icon" href="/portfolio/favicon.ico">
+	<title>Georgi Petrov | Portfolio</title>
+	<link href="assets/css/portfolio.b7661ce3.css" rel="prefetch">
+	<link href="assets/js/portfolio.b4248d6b.js" rel="prefetch">
+	<link href="assets/css/app.bc22387d.css" rel="preload" as="style">
+	<link href="assets/js/app.e8bd0a6d.js" rel="preload" as="script">
+	<link href="assets/js/chunk-vendors.819860d3.js" rel="preload" as="script">
+	<link href="assets/css/app.bc22387d.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/portfolio.b7661ce3.css">
+	<script charset="utf-8" src="assets/js/portfolio.b4248d6b.js"></script>
+	<title>Georgi Petrov's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>My Portfolio</h1>
+			<p>A brief introduction and showcase of my projects.</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html"></a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Projects</a></li>
+				<li><a href="resume.html">Resume</a></li>
+
+				
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/george-petrov-b571b31a1/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/georgipetrov98?tab=overview&from=2021-06-01&to=2021-06-30" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="#">My name is<br />
+							Georgi Petrov</a></h2>
+					<p>A programmer wannabe with love for technology, games and investing.</p>
+				</header>
+				<h2><a href="#">Personal projects</a></h2>
+				</ul>
+			</article>
+
+
+			<!-- Posts -->
+			<section class="posts">
+				
+				<article>
+					<header>
+						<h2><a href="#">Drawing <br />
+								Web Application</a></h2>
+					</header>
+					<a  class="image fit ">
+						<img src="images/Application.png" alt="" />
+						<div href="#" onclick="document.getElementById('ed02').style.display='block'" class="button">View</div>
+					</a>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Student <br />
+							Management Application</a></h2>
+					</header>
+					<a  class="image fit ">
+						<img src="images/System2.png" alt="" />
+						<div href="#" onclick="document.getElementById('ed03').style.display='block'" class="button">View</div>
+					</a>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Flower <br />
+								Shop</a></h2>
+					</header>
+					<a  class="image fit ">
+						<img src="images/FlowerSHOP.png" alt="" />
+						<div href="#" onclick="document.getElementById('ed01').style.display='block'" class="button">View</div>
+					</a>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Soon<br />
+								</a>TBD</h2>
+					</header>
+					<a  class="image fit ">
+						<img src="images/4bf0fc3aaf9bc41a52c427dc640b530e.jpeg" alt="" />
+						<div href="#" onclick="document.getElementById('ed04').style.display='block'" class="button">View</div>
+					</a>
+				</article>
+			</section>
+
+
+			<!-- Footer -->
+			<footer></footer>
+		</div>
+
+		<!-- Footer -->
+		<div>
+			<footer id="footer">
+				<section class="split contacts">
+					<section class="alt">
+						<h3>Email</h3>
+						<p><a href="#">georgizhelevpetrov@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/george-petrov-b571b31a1/" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a>
+							</li>
+							<li><a href="https://github.com/georgipetrov98?tab=overview&from=2021-06-01&to=2021-06-30" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+		</div>
+
+	</div>
+
+	<script>
+		function myFunction()
+{
+    document.getElementById('ed01').setAttribute("class", "style1");
+}
+	</script>
+	<!-- Scripts -->
+	
+
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/chunk-vendors.819860d3.js"></script>
+	<script src="assets/js/app.e8bd0a6d.js"></script>
+
+</body>
+<div class="contact"><ul class="contact__list"><li class="contact__item"><a href="https://www.linkedin.com/in/george-petrov-b571b31a1/" target="_blank" class="contact__link contact__link--linkedin"><span class="contact__label">Linkedin</span><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin fa-w-14"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" class=""></path></svg></a></li><li class="contact__item"><a href="https://github.com/georgipetrov98?tab=overview&from=2021-06-01&to=2021-06-30" target="_blank" class="contact__link contact__link--github"><span class="contact__label">Github</span><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-github fa-w-16"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></a></li><li class="contact__item"><a href="mailto:georgizhelevpetrov@gmail.com" target="_blank" class="contact__link contact__link--email"><span class="contact__label">Email</span><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" class=""></path></svg></a></li><li class="contact__item"><a href="https://drive.google.com/file/d/1yR82APhEPNYxvswyE6aCLUSd6EfqU3j8/view?usp=sharing" target="_blank" class="contact__link contact__link--resume"><span class="contact__label">Resume</span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="portrait" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-portrait fa-w-12"><path fill="currentColor" d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM192 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 384 80 375.4 80 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z" class=""></path></svg></a></li></ul></div>
+</html>
+
+
+	<div id="modal">
+		<div id="ed01" class="project__background project__background--show " style="display: none;">
+			<div class="project__modal project__modal--show">
+				<a class="project__close" onclick="document.getElementById('ed01').style.display = 'none'">
+						<svg aria-hidden="true"
+						focusable="false" data-prefix="fas" data-icon="times" role="img"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
+						class="svg-inline--fa fa-times fa-w-11">
+					<path fill="currentColor"
+						d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+						class=""></path></svg>
+				</a>
+				<div class="project__left">
+					<img src="images/FlowerSHOP.png" alt="Project Image" class="project__img--modal">
+				</div>
+				<div class="project__right">
+					<div class="project__label">Project</div>
+					<h3 class="project__name">Flower Shop</h3>
+					<ul class="project__technologies">
+						<li class="project__technology">HTML &amp; CSS</li>
+						<li class="project__technology">JavaScript</li>
+						<li class="project__technology">Bootstrap</li>
+						<li class="project__technology">C#</li>
+						<li class="project__technology">ASP.NET</li>
+						<li class="project__technology">PHP</li>
+						<li class="project__technology">MySQL</li>
+						
+					</ul>
+					<div class="project__label">About</div>
+					<p class="project__summary">
+						For the design of this project I used HTML, CSS and Bootstrap. For the backend PHP, ASP.NET, Mysql.
+
+						The idea of this website is a Flower shop. Project comes with the option to log-in as an administrator and a guest. Administrators have different priveleges, whilst the guests are far more limited. As a guest you can buy flowers, request invoices, etc. But as an administrator you can do a lot more, like checking product stock, changing product pictures, deleting pictures and much more.
+					</p><a href="https://flowershopfinal.azurewebsites.net/" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+							class="svg-inline--fa fa-eye fa-w-18">
+							<path fill="currentColor"
+								d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+								class=""></path>
+						</svg> Demo</a>
+					<a href="https://github.com/georgipetrov98/FlowerShop" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+							class="svg-inline--fa fa-code fa-w-20">
+							<path fill="currentColor"
+								d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+								class=""></path>
+						</svg> Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="modal">
+		<div id="ed03" class="project__background project__background--show " style="display: none;">
+			<div class="project__modal project__modal--show">
+				<a class="project__close" onclick="document.getElementById('ed03').style.display = 'none'">
+						<svg aria-hidden="true"
+						focusable="false" data-prefix="fas" data-icon="times" role="img"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
+						class="svg-inline--fa fa-times fa-w-11">
+					<path fill="currentColor"
+						d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+						class=""></path></svg>
+				</a>
+				<div class="project__left">
+					<img src="images/System4.png" alt="Project Image" class="project__img--modal">
+				</div>
+				<div class="project__right">
+					<div class="project__label">Project</div>
+					<h3 class="project__name">Student Management System</h3>
+					<ul class="project__technologies">
+					
+						<li class="project__technology">Java</li>
+						<li class="project__technology">Object-Oriented</li>
+						<li class="project__technology">Classes</li>
+						<li class="project__technology">UI/UX</li>
+					</ul>
+					<div class="project__label">About</div>
+					<p class="project__summary">
+						For this project I used Java. This project is meant to depict a Student Management System.
+						
+						It was built with java and uses Objects. It has a Student List that displays all the students and data about them like names,grades,etc. You as a lecturer have options to manipulate that data like adding next students, changing their names, groups and other. There are also some quality of life functions like sorting the tables, updating them, seriliazing them to a file. You can also import Excel spreadsheets of students and Bulk assign students to groups and create new groups.
+					</p><a href="http://51.11.180.168:6580/WindowsFormsApplication1/" target="_blank"
+				
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+							class="svg-inline--fa fa-eye fa-w-18">
+							<path fill="currentColor"
+								d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+								class=""></path>
+						</svg> Demo</a>
+					<a href="https://gitfront.io/r/user-6211650/b379b4ef36611918c00375521edb4fb25280a406/Student-Management-App/" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+							class="svg-inline--fa fa-code fa-w-20">
+							<path fill="currentColor"
+								d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+								class=""></path>
+						</svg> Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal">
+		<div id="ed04" class="project__background project__background--show " style="display: none;">
+			<div class="project__modal project__modal--show">
+				<a class="project__close" onclick="document.getElementById('ed04').style.display = 'none'">
+						<svg aria-hidden="true"
+						focusable="false" data-prefix="fas" data-icon="times" role="img"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
+						class="svg-inline--fa fa-times fa-w-11">
+					<path fill="currentColor"
+						d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+						class=""></path></svg>
+				</a>
+				<div class="project__left">
+					<img src="images/adventurecord.png" alt="Project Image" class="project__img--modal">
+				</div>
+				<div class="project__right">
+					<div class="project__label">Project</div>
+					<h3 class="project__name">Student Management System</h3>
+					<ul class="project__technologies">
+					
+						<li class="project__technology">Java</li>
+						<li class="project__technology">Object-Oriented</li>
+						<li class="project__technology">Classes</li>
+				
+					</ul>
+					<div class="project__label">About</div>
+					<p class="project__summary">
+
+						This project is meant to depict a Student Management System. It was built with java and uses Objects. 
+						It has a Student List that displays all the students and data about them like names,grades,etc. You as a lecturer have options to manipulate that data like adding next students, changing their names, groups and other. There are also some quality of life functions like sorting the tables, updating them, seriliazing them to a file. You can also import Excel spreadsheets of students and Bulk assign students to groups and create new groups.
+					</p><a href="http://51.11.180.168:6580/WindowsFormsApplication1/" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+							class="svg-inline--fa fa-eye fa-w-18">
+							<path fill="currentColor"
+								d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+								class=""></path>
+						</svg> Demo</a>
+					<a href="https://gitfront.io/r/user-6211650/b379b4ef36611918c00375521edb4fb25280a406/Student-Management-App/" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+							class="svg-inline--fa fa-code fa-w-20">
+							<path fill="currentColor"
+								d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+								class=""></path>
+						</svg> Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal">
+		<div id="ed02" class="project__background project__background--show " style="display: none;">
+			<div class="project__modal project__modal--show">
+				<a class="project__close" onclick="document.getElementById('ed02').style.display = 'none'">
+						<svg aria-hidden="true"
+						focusable="false" data-prefix="fas" data-icon="times" role="img"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
+						class="svg-inline--fa fa-times fa-w-11">
+					<path fill="currentColor"
+						d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+						class=""></path></svg>
+				</a>
+				<div class="project__left">
+					<img src="images/zOOMED.png" alt="Project Image" class="project__img--modal">
+				</div>
+				<div class="project__right">
+					<div class="project__label">Project</div>
+					<h3 class="project__name">Drawing Web Application</h3>
+					<ul class="project__technologies">
+						<li class="project__technology">HTML &amp; CSS</li>
+						<li class="project__technology">JavaScript</li>
+						<li class="project__technology">Node.js</li>
+						<li class="project__technology">Express</li>
+					</ul>
+					<div class="project__label">About</div>
+					<p class="project__summary">
+						For this project I used HTML & CSS for the front-end, Javascript, Node.js and Express.js for the backend.
+
+						My project is about creating a virtual learning whiteboard. An online whiteboard is a learning space where both teachers and students can write and interact with students in real time via the internet. So why am I making such a thing? Something that’s always bugged me is the lack of productivity that most young students have, so I decided to create a way for students to not have to waste all their time at school and be productive from their computer with a virtual whiteboard. It can help millions of people communicate/study/have fun over the internet. Imagine all the possibilities of an online whiteboard. You can draw, you can exchange notes with a fellow student, or talk about business, the options are immense. It has capabilities for drawing, chatting and could be expanded. Also with the help of node and express it was made to be used on many clients at the same time.
+					</p><a href="https://whiteboard-vle-application.herokuapp.com/draw/Programming" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+							class="svg-inline--fa fa-eye fa-w-18">
+							<path fill="currentColor"
+								d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+								class=""></path>
+						</svg> Demo</a>
+					<a href="https://gitfront.io/r/user-6211650/0d442ab75f0ff63978a649b160acc7afdc5c1628/VLE-Whiteboard/" target="_blank"
+						class="project__button project__button--modal">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+							class="svg-inline--fa fa-code fa-w-20">
+							<path fill="currentColor"
+								d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+								class=""></path>
+						</svg> Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+	
+		<script>
+			// Get the modal
+			var modal = document.getElementById('ed01');
+			var modal1 = document.getElementById('ed02')
+			var modal2 = document.getElementById('ed03')
+			var modal3 = document.getElementById('ed04')
+			
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+				modal.style.display = 'none';
+			}
+    		if (event.target == modal1) {
+        		modal1.style.display = "none";
+			  
+			}
+			if (event.target == modal2) {
+        		modal2.style.display = "none";
+			  
+			}
+			if (event.target == modal3) {
+        		modal3.style.display = "none";
+			  
+			}
+		}
+			</script>
+
+
+<script>
+	var tag = document.getElementById('ed01');
+	var button = document.querySelector('button');
+	button.addEventListener('click', function () {
+		modal.style.display = "block";
+
+
+	});
+</script>
